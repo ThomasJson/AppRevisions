@@ -1,4 +1,5 @@
 import React from "react";
+import CategoryCard from "../CategoryCard/CategoryCard";
 import "./homeScreen.css";
 
 const HomeScreen = () => {
@@ -6,6 +7,7 @@ const HomeScreen = () => {
     <>
       <div>
         <h1>La Boutique De Laurent Bedu</h1>
+        <CategoryCard />
       </div>
     </>
   );

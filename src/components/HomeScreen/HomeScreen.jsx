@@ -10,8 +10,8 @@ const HomeScreen = () => {
     <>
       <div>
         <h1>La Boutique De Laurent Bedu</h1>
-        <CategoryCard title={"Johnny"} description={"L'homme aux 1000 métiers"} image={"../../../public/assets/images/johnny.jpeg"}/>
-        <CategoryCard title={"Andréa"} description={"Andréa ' Energy ' Botez"} image={"../../../public/assets/images/johnny.jpeg"}/>
+        <CategoryCard title={"Johnny"} description={"L'homme aux 1000 métiers"} image={"./assets/images/johnny.jpeg"}/>
+        <CategoryCard title={"Andréa"} description={"Andréa ' Energy ' Botez"} image={"./assets/images/botez.jpg"}/>
       </div>
     </>
   );

@@ -22,13 +22,13 @@ const HomeScreen = () => {
       id: "3",
       title: "Massacre à la sulfateuse",
       description: 'something',
-      image: "https://picsum.photos/id/209",
+      image: "./assets/images/couilles.jpg",
     },
     {
       id: "4",
       title: `L'apprentie sorcière`,
       description: 'something',
-      image: "https://i.picsum.photos/id/548",
+      image: "./assets/images/sorciere.jpg",
     },
   ];
 

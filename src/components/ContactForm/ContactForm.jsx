@@ -2,13 +2,24 @@ import React from "react";
 import "./contactForm.css";
 
 const ContactForm = () => {
+
+  const handleFormSubmit = (evt) => {
+    evt.preventDefault();
+    const form = evt.target;
+    const formData = new FormData(form);
+    const jsonData = Object.fromEntries(formData.entries());
+    const jsonData2 = Object.fromEntries(new FormData(evt.target));
+    console.log(jsonData);
+  };
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleFormSubmit}>
         <div className="form-row">
           <div className="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
+            <label htmlFor="inputEmail4">Email</label>
             <input
+              name="email"
               type="email"
               className="form-control"
               id="inputEmail4"
@@ -16,8 +27,9 @@ const ContactForm = () => {
             />
           </div>
           <div className="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
+            <label htmlFor="inputPassword4">Password</label>
             <input
+              name="pass"
               type="password"
               className="form-control"
               id="inputPassword4"
@@ -26,8 +38,9 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="form-group">
-          <label for="inputAddress">Address</label>
+          <label htmlFor="inputAddress">Address</label>
           <input
+            name="adress"
             type="text"
             className="form-control"
             id="inputAddress"
@@ -36,12 +49,17 @@ const ContactForm = () => {
         </div>
         <div className="form-row">
           <div className="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" className="form-control" id="inputCity" />
+            <label htmlFor="inputCity">City</label>
+            <input
+              name="city"
+              type="text"
+              className="form-control"
+              id="inputCity"
+            />
           </div>
         </div>
-        <button type="submit" className="btn btn-primary">
-          Sign in
+        <button type="submit" value="submit" className="btn btn-primary">
+          Submit
         </button>
       </form>
     </div>

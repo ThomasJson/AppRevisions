@@ -41,8 +41,8 @@ const HomeScreen = () => {
 
         <div className="row">
           {cardCategories.map((card, index) => (
-            <div className="carD">
-              <CategoryCard key={index} card={card} title={card.title} description={card.description} image={card.image} />
+            <div className="carD" key={index}>
+              <CategoryCard card={card} title={card.title} description={card.description} image={card.image} />
             </div>))}
         </div>
       </div>

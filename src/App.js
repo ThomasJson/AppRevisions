@@ -4,7 +4,6 @@ import "./App.css";
 import HomeScreen from "./components/HomeScreen/HomeScreen";
 import ContactForm from "./components/ContactForm/ContactForm";
 import { useState } from "react";
-// import SwitchBtn from "./components/Switch/SwitchBtn";
 
 function App() {
   const [isDark, setIsDark] = useState(false);

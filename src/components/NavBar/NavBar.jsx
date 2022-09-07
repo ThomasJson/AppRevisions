@@ -1,12 +1,25 @@
 import React from "react";
-// import ToggleBtn from "../toggleBtn/ToggleBtn";
 
-const NavBar = ({ isDark, setIsDark }) => {
+const NavBar = ({ isDark, setIsDark, setCurrentPage }) => {
   return (
     <div>
-      <a className="navbar-brand" href="/home">Boutique</a>
-      <a className="navbar-brand" href="/home">Produits</a>
-      {/* <ToggleBtn isDark={isDark} setIsDark={setIsDark} /> */}
+      <button
+        className="navbar-brand"
+        onClick={() => {
+          setCurrentPage("HomeScreen");
+        }}
+      >
+        Boutique
+      </button>
+      <button
+        className="navbar-brand"
+        onClick={() => {
+          setCurrentPage("ProductScreen");
+        }}
+      >
+        Produits
+      </button>
+
       <div className="form-check form-switch">
         <input
           name="input"
